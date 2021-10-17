@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>    
+    <title>{{ title }}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/riu8uhz.css"> <!-- anonymous pro -->
+
+    <link rel="shortcut icon" type="image/png" href="/img/lament_16x16.png" />
+    {% comment %} <meta name="robots" content="noindex"> {% endcomment %}
+
+    <meta property="og:title" content="{{ title }}">
+    {% comment %} <meta property="og:description" content="The daily Legend Lost Sector in Destiny 2. Updated for Season 15: Season of the Lost."> {% endcomment %}
+    <meta property="og:description" content="{{ desc }}">
+    {% comment %} <meta property="og:image" content="{{ img }}">
+    <meta property="og:url" content="{{ post.url }}">
+    <meta name="twitter:card" content="summary_large_image"> {% endcomment %}
+</head>
+
+
+<body>
+
+  {% include header %}
+  {{ content }}
+  {% include footer %}
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@0.8.0/dist/js-confetti.browser.js"></script>
+<script src="/js/refreshing-surprise.js"></script>
+
+<script>
+console.log('find the refreshing surprise.');
+</script>
+
+
+</body>
+</html>

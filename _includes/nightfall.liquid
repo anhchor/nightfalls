@@ -1,0 +1,85 @@
+---
+layout: layout.liquid
+---
+
+<main class="container page">
+
+<header class="page-header">
+  <p class="nf-pretitle">{{ location }}</p>
+  <h1 class="nf-title">{{ title }}</h1>
+
+  <ul class="nf-meta">
+    <li><strong>Champions</strong>: 
+      {% for champions in champions %}
+        <span class="nf-meta__item">
+          <img src="/svg/{{ champions }}.svg"> {{ champions }}
+        </span>
+      {% endfor %}
+    </li>
+    <li><strong>Shields</strong>:
+      {% for shields in shields %}
+        <span class="nf-meta__item">
+          <img src="/svg/{{ shields }}.svg"> {{ shields }}
+        </span>
+      {% endfor %}
+    </li>
+  </ul>
+</header>
+
+<section class="content">
+
+{{ content }}
+
+</section>
+{% comment %} 
+<section class="nf-runs">
+
+<ul class="runs__list">
+  <li class="run">
+    <p class="run__class">Warlock</p>
+    <p class="run__subclass">Well of Radiance | Aeon Soul</p>
+
+    <ul class="run__loadout">
+      <li class="run__loadout-item"><strong>Kinetic</strong>: Whispering Slab</li>
+      <li class="run__loadout-item"><strong>Energy</strong>: Hollow Words</li>
+      <li class="run__loadout-item"><strong>Power</strong>: One Thousand Voices</li>
+      
+      <li class="run__loadout-item"><strong>Notes</strong>: finish stuff to generate ammo</li>
+    </ul>
+
+  </li>
+  <li class="run">
+    <p class="run__class">Warlock</p>
+    <p class="run__subclass">Shadebinder | Eye of Another World</p>
+
+    <ul class="run__loadout">
+      <li class="run__loadout-item"><strong>Kinetic</strong>: Whispering Slab</li>
+      <li class="run__loadout-item"><strong>Energy</strong>: Hollow Words</li>
+      <li class="run__loadout-item"><strong>Power</strong>: One Thousand Voices</li>
+      
+      <li class="run__loadout-item"><strong>Notes</strong>: finish stuff to generate ammo</li>
+    </ul>
+
+  </li>
+  <li class="run">
+    <p class="run__class">Warlock</p>
+    <p class="run__subclass">Well of Radiance | Aeon Soul</p>
+
+    <ul class="run__loadout">
+      <li class="run__loadout-item"><strong>Kinetic</strong>: Whispering Slab</li>
+      <li class="run__loadout-item"><strong>Energy</strong>: Hollow Words</li>
+      <li class="run__loadout-item"><strong>Power</strong>: One Thousand Voices</li>
+      
+      <li class="run__loadout-item"><strong>Notes</strong>: finish stuff to generate ammo</li>
+    </ul>
+
+  </li>
+</ul>
+
+</section> {% endcomment %}
+
+<footer class="page-footer">
+  Last updated: {{ page.date | date: "%B %d, %Y" }}
+</footer>
+
+</main>
