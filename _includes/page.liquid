@@ -1,0 +1,21 @@
+---
+layout: layout.liquid
+---
+
+<main class="container page">
+
+<header class="page-header">
+  <h1 class="nf-title">{{ title }}</h1>
+</header>
+
+<section class="content">
+
+{{ content }}
+
+</section>
+
+<footer class="page-footer">
+  Page last updated on: {{ page.date | date: "%B %d, %Y" }}
+</footer>
+
+</main>

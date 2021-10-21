@@ -1,6 +1,6 @@
 ---
 layout: home.liquid
-title: home
+title: "nightfall: the ordeal – info"
 ---
 
 hi

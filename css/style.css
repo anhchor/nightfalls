@@ -37,8 +37,8 @@
   :root {
     --font-size: 20px;
     --font-size-xl: 3em;
-    --font-size-lg: 2em;
-    --font-size-md: 1.75em;
+    --font-size-lg: 2.25em;
+    --font-size-md: 1.25em;
     --font-size-sm: .85em;
 
 
@@ -55,8 +55,8 @@
     --font-size: 1em;
     --font-size: 100%;
     --font-size-xl: 2em;
-    --font-size-lg: 1.65em;
-    --font-size-md: 1.25em;
+    --font-size-lg: 1.5em;
+    --font-size-md: 1.15em;
     --font-size-sm: .8em;
     
 
@@ -84,7 +84,7 @@ body {
   background-color: #113558;
 }
 a {
-  color: var(--text-sub);
+  color: var(--blue);
 }
 h1 {
   font-family: var(--font-heading);
@@ -135,36 +135,87 @@ content styling
   margin-bottom: 0;
 }
 
-.content > ul {
+
+
+/* lists ============================= */
+
+.content ul {
   list-style-type: none;
   margin: 1em 0 1.5em .5em;
   padding: 0;
 }
-.content > ul > li {
+.content ul > li {
   margin-left: 1.5em;
   margin-bottom: .15em;
 }
-.content > ul > li:before {
+.content ul > li:before {
   color: var(--blue);
   content: '–';
   margin-left: -1.25em;
   margin-right: .75em;
 }
 
+.content li > ul {
+  list-style-type: none;
+  margin-top: .75em;
+}
+
+.content > ol {
+  list-style-type: none;
+  margin: 1em 0 1.5em .5em;
+  padding: 0;
+
+  counter-reset: listCounter;
+}
+.content > ol > li {
+  margin-left: 1.5em;
+  margin-bottom: .15em;
+  position: relative;
+
+  counter-increment: listCounter;
+}
+.content > ol > li:before {
+  color: var(--blue);
+  content: counter(listCounter)'.';
+  font-weight: bold;
+  text-align: right;
+
+  position: absolute;
+  margin-left: -1.35em;
+  margin-right: .75em;
+}
+
+
+
+
+/* headings ============================= */
+
 .content > h2 {
   color: var(--blue);
 
   font-family: var(--font-heading);
-  font-size: 2em;
+  font-size: var(--font-size-lg);
   font-weight: normal;
   margin-top: 2em;
   margin-bottom: 0;
 }
 .content > h3 {
-  font-size: 1.15em;
+  font-size: var(--font-size-md);
   margin-top: 2em;
   margin-bottom: 0;
 }
+.content > h4 {
+  font-size: var(--font-size);
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+.content > h2 + h3 {
+  margin-top: 1em;
+}
+
+
+
 
 
 
@@ -176,19 +227,43 @@ header
   max-width: var(--width-container); 
   margin-left: auto;
   margin-right: auto;
-  padding: 2em var(--sp-edge) 1em;
+  margin-top: 1em;
 }
 .site-header__title {
+  color: var(--text);
   font-family: var(--font-heading);
   font-weight: normal;
   font-size: 1.5em;
+  text-decoration: none;
 
-  margin-bottom: 0;
 }
 
+
+@media screen and (min-width: 500px) {
+  .site-header {
+    padding: 2em var(--sp-edge) 1em;
+  }
+  .site-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-nav__item {
+    margin-right: 1.5em;
+  }
+}
+@media screen and (max-width: 499px) {
+  .site-header {
+    padding: 1em var(--sp-edge) 1em;
+  }
+  .site-nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+}
 .site-nav {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  /* border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border); */
   margin-top: .5em;
 
   font-size: var(--font-size-sm);
@@ -197,21 +272,15 @@ header
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-.site-nav__item {
-  padding: .5em 0;
-}
-.site-nav__item.current {
-  border-bottom: 2px solid var(--blue);
+.site-nav__item.current > a {
+  /* border-bottom: 2px solid var(--blue); */
   font-weight: bold;
+  color: var(--blue);
 }
 .site-nav__item > a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--text-sub);
 }
 
 
@@ -230,20 +299,21 @@ main {
 }
 
 .nf-title {
-  font-size: 3.5em;
+  font-size: var(--font-size-xl);
   font-weight: 400;
+  line-height: 1;
   margin: 0;
 }
 .nf-pretitle {
   color: var(--blue);
   font-size: var(--font-size-sm);
   font-weight: bold; 
-  margin: 0;
+  margin: 0 0 .5em;
 }
 
 .nf-meta {
   list-style-type: none;
-  margin: 0;
+  margin: .5em 0 0;
   padding: 0;
 
   color: var(--text-sub);
@@ -324,8 +394,6 @@ footer
 
   color: var(--blue);
   font-weight: bold;
-}
-.footer-nav {
 }
 .footer-nav__list {
   list-style-type: none;
