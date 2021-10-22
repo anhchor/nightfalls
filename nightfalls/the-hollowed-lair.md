@@ -17,17 +17,24 @@ eleventyNavigation:
 Heavy on ad-clear efficiency. Clear spawns immediately, before progressing. Lower plates gradually, stop when enemies spawn to clear them, then continue lowering. Damage boss slowly, stop when enemies spawn, then continue.
 
 
-## Champions
+---
+
+
+## Nightfall Info
+
+### Champions
 
 - **Overload**: they throw lanterns.
 - **Unstoppable**: they have long-range lightning attacks.
 
 
-## Shields
+### Shields
 
 - **Arc** (1): in the room with the two plates.
 - **Solar** (2): one in the room with the two plates; another spawns in a boss room wave.
 
+
+---
 
 
 ## Strategy
@@ -80,8 +87,8 @@ Enemy spawns are tied to boss health, at approximately every 1/9th of his health
 
 After the second tether in this final section, you can burn down the boss.
 
-
+<!-- 
 
 ## Loadout
 
-The boss room requires lots of moving around, so I don't recommend Well of Radiance.
+The boss room requires lots of moving around, so I don't recommend Well of Radiance. -->

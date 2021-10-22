@@ -19,6 +19,9 @@ eleventyNavigation:
 Destroying the Taken blights in reverse order (3 → 2 → 1) prevents waves of Champions and ads from spawning. There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy.
 
 
+---
+
+
 ## Nightfall Info
 
 ### Champions
@@ -33,6 +36,8 @@ Destroying the Taken blights in reverse order (3 → 2 → 1) prevents waves of 
 - **Solar** (many): enough throughout the strike that you probably don't want to rely on heavy ammo to pop them.
 - **Void** (1): one Void mini-boss wizard towards the end.
 
+
+---
 
 
 ## Strategy
