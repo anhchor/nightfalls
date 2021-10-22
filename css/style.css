@@ -54,8 +54,8 @@
 @media screen and (max-width: 699px) {
   :root {
     --font-size: 1em;
-    --font-size-xl: 2em;
-    --font-size-lg: 1.5em;
+    --font-size-xl: 2.25em;
+    --font-size-lg: 1.75em;
     --font-size-md: 1.15em;
     --font-size-sm: .8em;
     
@@ -322,7 +322,6 @@ content styling
   font-weight: normal;
   line-height: 1;
 
-
   margin-top: 5rem;
   margin-bottom: 0;
   scroll-margin: 3rem;
@@ -337,9 +336,13 @@ content styling
   margin-top: 2rem;
   margin-bottom: 0;
 }
-
 .content > h2 + h3 {
   margin-top: 1.5rem;
+}
+@media screen and (max-width: 699px) {
+  .content > h2 {
+    margin-top: 3rem;
+  }
 }
 
 
@@ -383,6 +386,7 @@ header
   .site-header {
     margin-top: 0;
     padding: 2em var(--sp-edge) 2em;
+    border-bottom: 1px solid var(--border);
   }
   .site-nav__list {
     display: grid;
@@ -429,6 +433,7 @@ homepage
 @media screen and (max-width: 580px) {
   .home-nf {
     display: block;
+    margin-top: 2rem;
   }
   .home-nf__image {
     display: none;
@@ -581,7 +586,12 @@ pages
 ============================================ */
 
 .page-header {
-  margin-top: var(--sp);
+  margin-top: var(--sp-lg);
+}
+@media screen and (max-width: 699px) {
+  .page-header {
+    margin-top: var(--sp);
+  }
 }
 .page-title {
   font-size: var(--font-size-xl);
