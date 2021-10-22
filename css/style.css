@@ -166,6 +166,10 @@ content styling
   grid-column: 1 / 2;
 }
 
+.content > hr {
+  max-width: var(--width-content);
+}
+
 .content > p,
 .content > ul,
 .content > ol {
