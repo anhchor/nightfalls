@@ -10,6 +10,7 @@ shields:
 eleventyNavigation:
   key: The Hollowed Lair
   order: 1
+toc: true
 ---
 
 ## Summary
@@ -44,11 +45,11 @@ The main goal is ad-clear. It's very easy to get overwhelmed in the boss room an
 
 ### Tank Room
 
-- Watch for two snipers, one on the left and one on the right, when you first get to the room. More will spawn in the next wave.
-- Lower the plate gradually, and step off when things spawn at about 90%. This prevents the tank from spawning, so you can focus on ads and Champions. Finish lowering the plate after you've cleared the room.
+- **Watch for snipers**, one on the far left and one on the far right, when you first get to the room. More will spawn in the next wave.
+- **Lower the plate gradually**, and step off when things spawn at about 90%. This prevents the tank from spawning, so you can focus on ads and Champions. Finish lowering the plate after you've cleared the room.
 - The tank puts up its bubble and opens the crit spot in its head when one of its legs breaks. The bubble can be broken with Super damage. Ads spawn when the tank's head closes again.
   - Prevent this spawn by destroying the tank before it closes its head.
-  - Recommendation: don't destroy any tank legs until its health is low, and then burn it down before it can get back up. It's possible to destroy the tank without ever destroying a leg.
+  - **Recommendation**: don't destroy any tank legs until its health is low, and then burn it down before it can get back up. It's possible to destroy the tank without ever destroying a leg.
 
 
 ### Plates Room
@@ -73,7 +74,13 @@ Enemy spawns are tied to boss health, at approximately every 1/9th of his health
 
 #### Spawn and Tether Patterns
 
-(Note: I _think_ this is the flow. Left/Right may be mixed up, but this is the general idea.)
+These are tied to boss health, at every 1/9th.
+
+<aside>
+
+Note: I _think_ this is the flow. Left/Right may be mixed up, but this is the general idea.
+
+</aside>
 
 1. Right
 2. Left

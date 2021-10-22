@@ -1,6 +1,4 @@
 ---
 layout: home.liquid
-title: "nightfall: the ordeal – info"
+title: "nightfalls — grandmaster edition"
 ---
-
-hi

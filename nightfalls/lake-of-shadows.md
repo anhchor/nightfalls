@@ -12,6 +12,7 @@ shields:
 eleventyNavigation:
   key: Lake of Shadows
   order: 2
+toc: true
 ---
 
 ## Summary

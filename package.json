@@ -19,6 +19,7 @@
   "homepage": "https://github.com/anhchor/nightfalls#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.3.2"
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "markdown-it-anchor": "^8.4.1"
   }
 }

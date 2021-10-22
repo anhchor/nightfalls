@@ -88,50 +88,60 @@
 
 <section class="content">
 
-<h2>Summary</h2>
+
+  <nav class="post__toc">
+    <p class="post__toc-heading">Table of Contents</p>
+    <ol class="post__toc-list"></ol>
+  </nav>
+
+
+<h2 id="summary" tabindex="-1">Summary</h2>
 <p>Heavy on ad-clear efficiency. Clear spawns immediately, before progressing. Lower plates gradually, stop when enemies spawn to clear them, then continue lowering. Damage boss slowly, stop when enemies spawn, then continue.</p>
 <hr>
-<h2>Nightfall Info</h2>
-<h3>Champions</h3>
+<h2 id="nightfall-info" tabindex="-1">Nightfall Info</h2>
+<h3 id="champions" tabindex="-1">Champions</h3>
 <ul>
 <li><strong>Overload</strong>: they throw lanterns.</li>
 <li><strong>Unstoppable</strong>: they have long-range lightning attacks.</li>
 </ul>
-<h3>Shields</h3>
+<h3 id="shields" tabindex="-1">Shields</h3>
 <ul>
 <li><strong>Arc</strong> (1): in the room with the two plates.</li>
 <li><strong>Solar</strong> (2): one in the room with the two plates; another spawns in a boss room wave.</li>
 </ul>
 <hr>
-<h2>Strategy</h2>
+<h2 id="strategy" tabindex="-1">Strategy</h2>
 <p>The main goal is ad-clear. It's very easy to get overwhelmed in the boss room and wipe. Watch out for Void snipers, which can one-shot you. Mini Screebs will kill you.</p>
-<h3>Tank Room</h3>
+<h3 id="tank-room" tabindex="-1">Tank Room</h3>
 <ul>
-<li>Watch for two snipers, one on the left and one on the right, when you first get to the room. More will spawn in the next wave.</li>
-<li>Lower the plate gradually, and step off when things spawn at about 90%. This prevents the tank from spawning, so you can focus on ads and Champions. Finish lowering the plate after you've cleared the room.</li>
+<li><strong>Watch for snipers</strong>, one on the far left and one on the far right, when you first get to the room. More will spawn in the next wave.</li>
+<li><strong>Lower the plate gradually</strong>, and step off when things spawn at about 90%. This prevents the tank from spawning, so you can focus on ads and Champions. Finish lowering the plate after you've cleared the room.</li>
 <li>The tank puts up its bubble and opens the crit spot in its head when one of its legs breaks. The bubble can be broken with Super damage. Ads spawn when the tank's head closes again.
 <ul>
 <li>Prevent this spawn by destroying the tank before it closes its head.</li>
-<li>Recommendation: don't destroy any tank legs until its health is low, and then burn it down before it can get back up. It's possible to destroy the tank without ever destroying a leg.</li>
+<li><strong>Recommendation</strong>: don't destroy any tank legs until its health is low, and then burn it down before it can get back up. It's possible to destroy the tank without ever destroying a leg.</li>
 </ul>
 </li>
 </ul>
-<h3>Plates Room</h3>
+<h3 id="plates-room" tabindex="-1">Plates Room</h3>
 <p>Lower one plate at a time. Step off when ads spawn, and continue lowering when the room is clear.</p>
-<h3>Bridge</h3>
+<h3 id="bridge" tabindex="-1">Bridge</h3>
 <ul>
 <li>Watch out for snipers in the far back when you first enter, and in the wave of ads on the bridge.</li>
 <li>Jumping ahead to the bridge will spawn the wave of ads and Champions, so hang back and clear ads before moving up.</li>
 </ul>
-<h3>Boss Room</h3>
+<h3 id="boss-room" tabindex="-1">Boss Room</h3>
 <p>Enemy spawns are tied to boss health, at approximately every 1/9th of his health bar. Damage the boss, and stop immediately when ads start spawning. Clear the waves before continuing boss damage.</p>
 <ul>
 <li>The boss's Arc attack will likely one-shot you, unless you have Arc + Sniper resist and enough Resilience. He shoots frequently and quickly, so it's important to keep behind cover.</li>
 <li>When the boss charges and casts his Arc AOE attack, he won't be shooting you. Use this opportunity to move around the map and revive teammates.</li>
 <li>Watch out for Mini Screebs, which will kill you.</li>
 </ul>
-<h4>Spawn and Tether Patterns</h4>
-<p>(Note: I <em>think</em> this is the flow. Left/Right may be mixed up, but this is the general idea.)</p>
+<h4 id="spawn-and-tether-patterns" tabindex="-1">Spawn and Tether Patterns</h4>
+<p>These are tied to boss health, at every 1/9th.</p>
+<aside>
+<p>Note: I <em>think</em> this is the flow. Left/Right may be mixed up, but this is the general idea.</p>
+</aside>
 <ol>
 <li>Right</li>
 <li>Left</li>
@@ -155,8 +165,34 @@ The boss room requires lots of moving around, so I don't recommend Well of Radia
 
 
 </main>
+
+<script>
+const headings = document.querySelectorAll("h2");
+const tocList = document.querySelector(".post__toc-list");
+
+function generateTOC() {
+  for (let i = 0; i < headings.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.setAttribute("class", "post__toc-item");
+
+    let listURL = "#" + headings[i].getAttribute("id");
+
+    let listItemLink = document.createElement("a");
+    listItemLink.setAttribute("href", listURL);
+    listItemLink.setAttribute("class", "post__toc-link");
+
+    let listItemTitle = document.createTextNode(headings[i].innerText);
+
+    listItem.appendChild(listItemLink);
+    listItemLink.appendChild(listItemTitle);
+    tocList.appendChild(listItem);
+  }
+}
+
+generateTOC();
+</script>
   <footer class="site-footer">
-  <p class="site-footer__title container">nightfall: the ordeal</p>
+  <p class="site-footer__title container">nightfalls — grandmaster edition</p>
   <nav class="footer-nav container">
     
     <ul class="footer-nav__list">

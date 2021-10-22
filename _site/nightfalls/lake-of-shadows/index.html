@@ -92,35 +92,42 @@
 
 <section class="content">
 
-<h2>Summary</h2>
+
+  <nav class="post__toc">
+    <p class="post__toc-heading">Table of Contents</p>
+    <ol class="post__toc-list"></ol>
+  </nav>
+
+
+<h2 id="summary" tabindex="-1">Summary</h2>
 <p>Destroying the Taken blights in reverse order (3 → 2 → 1) prevents waves of Champions and ads from spawning. There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy.</p>
 <hr>
-<h2>Nightfall Info</h2>
-<h3>Champions</h3>
+<h2 id="nightfall-info" tabindex="-1">Nightfall Info</h2>
+<h3 id="champions" tabindex="-1">Champions</h3>
 <ul>
 <li><strong>Overload</strong>: they have a long-range Void attack.</li>
 <li><strong>Unstoppable</strong>: their shield boop attacks will launch you into walls, which will kill you.</li>
 </ul>
-<h3>Shields</h3>
+<h3 id="shields" tabindex="-1">Shields</h3>
 <ul>
 <li><strong>Arc</strong> (3): two in the very beginning, and one mini-boss before you enter the building.</li>
 <li><strong>Solar</strong> (many): enough throughout the strike that you probably don't want to rely on heavy ammo to pop them.</li>
 <li><strong>Void</strong> (1): one Void mini-boss wizard towards the end.</li>
 </ul>
 <hr>
-<h2>Strategy</h2>
+<h2 id="strategy" tabindex="-1">Strategy</h2>
 <p>Lake of Shadows is a relatively easy nightfall, so it's forgiving on what strategy you use. It's recommended to prioritize burning down the boss, because surviving in the boss room would be very challenging.</p>
-<h3>Taken Blights</h3>
+<h3 id="taken-blights" tabindex="-1">Taken Blights</h3>
 <p>Destroy them in reverse order (3 → 2 → 1). This prevents waves of ads and Champions from spawning in. This does not affect Platinum Rewards, as the Champions don't spawn in at all.</p>
-<h3>Bridge</h3>
+<h3 id="bridge" tabindex="-1">Bridge</h3>
 <p>Watch out for Taken boop cannons in the walls that will launch you off the map or into walls.</p>
-<h3>Boss Room</h3>
+<h3 id="boss-room" tabindex="-1">Boss Room</h3>
 <p>The boss room gets chaotic, so it's important to burn down the boss as quickly as possible. Enemies start spawning in shortly after the boss spawns.</p>
 <p>Anecdotally: Well of Radiance + Focusing Lens + 2x One Thousand Voices + LFR + Thundercrash will melt the boss very quickly.</p>
-<h2>Loadout</h2>
-<h3>Aeon Gauntlets</h3>
+<h2 id="loadout" tabindex="-1">Loadout</h2>
+<h3 id="aeon-gauntlets" tabindex="-1">Aeon Gauntlets</h3>
 <p>Highly recommended. There are three Overload Champions leading up to the boss room that are easy to use a finisher on, so you can ensure you enter the boss fight with enough ammo.</p>
-<h3>Boss Room Melt</h3>
+<h3 id="boss-room-melt" tabindex="-1">Boss Room Melt</h3>
 <ul>
 <li>Well of Radiance / Titan Bubble</li>
 <li>Falling Guillotine</li>
@@ -135,8 +142,34 @@
 
 
 </main>
+
+<script>
+const headings = document.querySelectorAll("h2");
+const tocList = document.querySelector(".post__toc-list");
+
+function generateTOC() {
+  for (let i = 0; i < headings.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.setAttribute("class", "post__toc-item");
+
+    let listURL = "#" + headings[i].getAttribute("id");
+
+    let listItemLink = document.createElement("a");
+    listItemLink.setAttribute("href", listURL);
+    listItemLink.setAttribute("class", "post__toc-link");
+
+    let listItemTitle = document.createTextNode(headings[i].innerText);
+
+    listItem.appendChild(listItemLink);
+    listItemLink.appendChild(listItemTitle);
+    tocList.appendChild(listItem);
+  }
+}
+
+generateTOC();
+</script>
   <footer class="site-footer">
-  <p class="site-footer__title container">nightfall: the ordeal</p>
+  <p class="site-footer__title container">nightfalls — grandmaster edition</p>
   <nav class="footer-nav container">
     
     <ul class="footer-nav__list">
