@@ -54,7 +54,6 @@
 @media screen and (max-width: 699px) {
   :root {
     --font-size: 1em;
-    --font-size: 100%;
     --font-size-xl: 2em;
     --font-size-lg: 1.5em;
     --font-size-md: 1.15em;
@@ -158,9 +157,9 @@ content styling
 .content {
   margin-bottom: var(--sp-lg);
 
-  display: grid;
+  /* display: grid;
   grid-template-columns: 60ch 1fr;
-  grid-column-gap: var(--sp-lg);
+  grid-column-gap: var(--sp-lg); */
 }
 
 .content > * {
