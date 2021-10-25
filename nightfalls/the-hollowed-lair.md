@@ -10,7 +10,9 @@ shields:
 eleventyNavigation:
   key: The Hollowed Lair
   order: 1
+  image: fanatic_edit.jpg
 toc: true
+image: fanatic_edit.jpg
 ---
 
 ## Summary

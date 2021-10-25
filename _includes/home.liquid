@@ -5,34 +5,63 @@ layout: layout.liquid
 <main class="container">
 
 <article class="home-nf">
-  <section class="home-nf__content">
-    <p class="nf-pretitle">Current Nightfall → October 19–25</p>
-    <h1 class="nf-title">Exodus Crash</h1>
-    <ul class="home-nf__meta">
-      <li><strong>Drops</strong>: The Comedian, Shadow Price</li>
-    </ul>
+  {% for nightfall in collections.nightfall %}
+    {% if nightfall.data.current == true %}
+      <section class="home-nf__content">
+        <p class="nf-pretitle">Current Nightfall → October 19–25</p>
+        <h1 class="nf-title">{{ nightfall.data.title }}</h1>
+        <ul class="home-nf__meta">
+          <li><strong>Drops</strong>: The Comedian, Shadow Price</li>
+        </ul>
 
-    <p>we all love this strike so much. this takes place on nessus. the boss likes to teleport around, be invisible, and go immune. a trifecta of fun. real summary coming later.</p>
-    <ul class="home-nf__meta">
-      <li><strong>Champions</strong>: Overload and Barrier</li>
-      <li><strong>Shields</strong>: idk</li>
-    </ul>
+        <p>{{ nightfall.data.excerpt }}</p>
+        <ul class="home-nf__meta">
+          <li><strong>Champions</strong>: 
+            {% for champions in nightfall.data.champions %}
+              <span class="home-nf__meta-item"><img src="/svg/{{ champions }}.svg"> {{ champions }}</span>
+            {% endfor %}
+          </li>
+          <li><strong>Shields</strong>: 
+            {% for shields in nightfall.data.shields %}
+              <span class="home-nf__meta-item"><img src="/svg/{{ shields }}.svg"> {{ shields }}</span>
+            {% endfor %}
+          </li>
+        </ul>
 
-    <a href="/nightfalls/exodus-crash" class="home-nf__cta">Read more →</a>
+        <a href="/nightfalls/exodus-crash" class="home-nf__cta">Read more →</a>
 
-  </section>
+      </section>
 
-  <figure class="home-nf__image">
-    <img src="/img/exodus-crash_boss_edit.jpg" alt="">
-    <figcaption>Thaviks, the Depraved</figcaption>
-  </figure>
-
+      <figure class="home-nf__image">
+        <img src="/img/{{ nightfall.data.image }}" alt="{{ nightfall.data.boss }}">
+        <figcaption>{{ nightfall.data.boss }}</figcaption>
+      </figure>
+    {% endif %}
+  {% endfor %}
 </article>
 
 <hr>
 
 <section class="home-list">
   <h2 class="home-list__title">Season of the Lost → Nightfalls List</h2>
+  
+  {% comment %} {% assign gmPages = collections.all | eleventyNavigation %}
+  {% for entry in gmPages %}
+    <a href="{{ entry.url | url }}"><article class="nf-card">
+      <h3 class="nf-card__title">{{ entry.title }}</h3>
+      <p class="nf-card__note"></p>
+      <img src="/img/{{ entry.image }}" alt="" class="nf-card__image">
+    </article></a>
+  {% endfor %} {% endcomment %}
+  
+  {% comment %} {% for nightfall in collections.nightfall %}
+    <a href="/nightfalls/{{ nightfall.url }}"><article class="nf-card">
+      <h3 class="nf-card__title">{{ nightfall.data.title }}</h3>
+      <p class="nf-card__note"></p>
+      <img src="/img/{{ nightfall.data.image }}" alt="" class="nf-card__image">
+    </article></a>
+  {% endfor %} {% endcomment %}
+
 
   <a href="/nightfalls/the-corrupted"><article class="nf-card">
     <h3 class="nf-card__title">The Corrupted</h3>
@@ -63,8 +92,10 @@ layout: layout.liquid
     <h3 class="nf-card__title">Exodus Crash</h3>
     <p class="nf-card__note">Current Nightfall ✦ Oct. 19–25</p>
     <img src="/img/thaviks_edit.jpg" alt="" class="nf-card__image">
-  </article></a>
+  </article></a> 
 </section>
 
 
 </main>
+
+{% comment %} <script src="/js/rotation.js"></script> {% endcomment %}

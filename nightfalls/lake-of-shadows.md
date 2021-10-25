@@ -12,7 +12,10 @@ shields:
 eleventyNavigation:
   key: Lake of Shadows
   order: 2
+  image: grask_edit.jpg
+
 toc: true
+image: grask_edit.jpg
 ---
 
 ## Summary

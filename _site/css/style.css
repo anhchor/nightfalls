@@ -208,6 +208,16 @@ content styling
   font-family: var(--font-mono);
   font-size: var(--font-size-sm);
   line-height: 1.25;
+  
+  position: relative;
+}
+.asterisk::before {
+  content: '*';
+  color: var(--blue);
+  
+  position: absolute;
+  left: -1em;
+  top: calc(1em - 3px);
 }
 .content figcaption {
   margin-top: .25em;
@@ -216,6 +226,10 @@ content styling
   .content > aside {
     margin-left: var(--sp);
   }
+}
+.aside__ref::after {
+  content: '*';
+  color: var(--blue);
 }
 
 
@@ -447,6 +461,9 @@ homepage
 
   color: var(--text-sub);
   font-family: var(--font-mono);
+}
+.home-nf__meta-item {
+  margin-right: .5em;
 }
 
 .home-nf__content {
