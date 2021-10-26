@@ -8,10 +8,10 @@ layout: layout.liquid
   {% for nightfall in collections.nightfall %}
     {% if nightfall.data.current == true %}
       <section class="home-nf__content">
-        <p class="nf-pretitle">Current Nightfall → October 19–25</p>
+        <p class="nf-pretitle">Current Nightfall → Oct. 26 – Nov. 1</p>
         <h1 class="nf-title">{{ nightfall.data.title }}</h1>
         <ul class="home-nf__meta">
-          <li><strong>Drops</strong>: The Comedian, Shadow Price</li>
+          <li><strong>Drops</strong>:Hung Jury SR4, The Hothead</li>
         </ul>
 
         <p>{{ nightfall.data.excerpt }}</p>
@@ -28,7 +28,7 @@ layout: layout.liquid
           </li>
         </ul>
 
-        <a href="/nightfalls/exodus-crash" class="home-nf__cta">Read more →</a>
+        <a href="{{ nightfall.url }}" class="home-nf__cta">Read more →</a>
 
       </section>
 
@@ -62,15 +62,9 @@ layout: layout.liquid
     </article></a>
   {% endfor %} {% endcomment %}
 
-
-  <a href="/nightfalls/the-corrupted"><article class="nf-card">
-    <h3 class="nf-card__title">The Corrupted</h3>
-    <p class="nf-card__note">Upcoming: Oct. 26 – Nov. 1</p>
-    <img src="/img/sedia_edit.jpg" alt="" class="nf-card__image">
-  </article></a>
   <a href="/nightfalls/the-devils-lair"><article class="nf-card">
     <h3 class="nf-card__title">The Devils’ Lair</h3>
-    <p class="nf-card__note">Nov. 2–8</p>
+    <p class="nf-card__note">Upcoming: Nov. 2–8</p>
     <img src="/img/sepiks_edit.jpg" alt="" class="nf-card__image">
   </article></a>
   <a href="/nightfalls/proving-grounds"><article class="nf-card">
@@ -90,9 +84,14 @@ layout: layout.liquid
   </article></a>
   <a href="/nightfalls/exodus-crash"><article class="nf-card">
     <h3 class="nf-card__title">Exodus Crash</h3>
-    <p class="nf-card__note">Current Nightfall ✦ Oct. 19–25</p>
+    <p class="nf-card__note">Nov. 30 – Dec. 6</p>
     <img src="/img/thaviks_edit.jpg" alt="" class="nf-card__image">
   </article></a> 
+  <a href="/nightfalls/the-corrupted"><article class="nf-card">
+    <h3 class="nf-card__title">The Corrupted</h3>
+    <p class="nf-card__note">Current NF ✦ Oct. 26 – Nov. 1</p>
+    <img src="/img/sedia_edit.jpg" alt="" class="nf-card__image">
+  </article></a>
 </section>
 
 

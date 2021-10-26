@@ -12,7 +12,6 @@ champions:
   - Overload
   - Barrier
 excerpt: Go slowly, because pikes and random snipers will kill you. The boss room requires survivability while being surrounded.
-current: true
 image: thaviks_edit.jpg
 boss: Thaviks, the Depraved
 toc: true
