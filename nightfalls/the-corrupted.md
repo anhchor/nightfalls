@@ -17,3 +17,26 @@ image: sedia_edit.jpg
 current: true
 boss: Sedia, the Corrupted
 ---
+
+
+## Summary
+
+Throw orbs to teammates to charge them before breaking enemy shields. Killing the large Ogres in the ogre room will despawn enemies and champions, which will prevent Platinum completion.
+
+
+---
+
+
+## Nightfall Info
+
+### Champions
+
+- Overload
+- Unstoppable
+
+
+### Shields
+
+- **Arc** (many): Knights
+- **Solar** (many): Knights? They show up in the Ogre room and the boss rooms.
+- **Void** (many): Acolytes

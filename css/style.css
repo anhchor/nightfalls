@@ -642,6 +642,14 @@ pages
   margin-left: .5em;
 }
 
+p.nf-status {
+  border: 1px dashed var(--border);
+  margin-top: 4rem;
+  padding: .5em 1em;
+  max-width: 100%;
+
+  font-size: var(--font-size-sm);
+}
 
 .page-footer {
   color: var(--text-sub);

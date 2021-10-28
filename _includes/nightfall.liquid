@@ -4,6 +4,7 @@ layout: layout.liquid
 
 <main class="container page">
 
+
 <header class="page-header">
   <p class="nf-pretitle">{{ location }}</p>
   <h1 class="nf-title">{{ title }}</h1>
@@ -26,6 +27,7 @@ layout: layout.liquid
   </ul>
 </header>
 
+
 <section class="content">
 
 {% if toc %}
@@ -33,6 +35,10 @@ layout: layout.liquid
     <p class="post__toc-heading">Table of Contents</p>
     <ol class="post__toc-list"></ol>
   </nav>
+{% endif %}
+
+{% if status %}
+<p class="nf-status"><strong>Page Status</strong>: {{ status }}</p>
 {% endif %}
 
 {{ content }}
@@ -91,6 +97,7 @@ layout: layout.liquid
 
 </main>
 
+{% if toc %}
 <script>
 const headings = document.querySelectorAll("h2");
 const tocList = document.querySelector(".post__toc-list");
@@ -115,4 +122,6 @@ function generateTOC() {
 }
 
 generateTOC();
+
 </script>
+{% endif %}
