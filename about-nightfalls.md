@@ -22,7 +22,7 @@ All Grandmaster Nightfalls have the following modifiers:
 
 ## Rewards
 
-If you get **Platinum Rewards** by defeating all Champions, you get:
+If you get **Platinum Completion** by defeating all Champions, you get:
 
 - Ascendent Shards (common)
 - Enhancement Prisms (commmon)
