@@ -96,8 +96,11 @@ Note: I _think_ this is the flow. Left/Right may be mixed up, but this is the ge
 
 After the second tether in this final section, you can burn down the boss.
 
-<!-- 
 
-## Loadout
+---
 
-The boss room requires lots of moving around, so I don't recommend Well of Radiance. -->
+
+## Personal Loadout
+
+- 1x Stasis Warlock + 2x Chaos Reach with Geomags
+- 2x Ticuu's, 2x Blinding GLs, 3x LFR

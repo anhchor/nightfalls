@@ -99,3 +99,11 @@ I think this is the general flow. It gets quite chaotic when the Barrier Servito
 
 Anecdotally: survivability is key, and I've seen success with chaining Well of Radiance among the team, so that you're always standing in a Well. You get surrounded very quickly, so it's important to be in one.
 
+
+---
+
+
+## Personal Loadout
+
+- 2x Well of Radiance with Phoenix Protocol + 1x Omnioculous Invis Hunter
+- 2x Eriana's Vow, bow + sword for Overload stun

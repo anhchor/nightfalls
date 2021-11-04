@@ -66,6 +66,7 @@ The boss room gets chaotic, so it's important to burn down the boss as quickly a
 Anecdotally: Well of Radiance + Focusing Lens + 2x One Thousand Voices + LFR + Thundercrash will melt the boss very quickly.
 
 
+---
 
 ## Loadout
 
@@ -74,6 +75,7 @@ Anecdotally: Well of Radiance + Focusing Lens + 2x One Thousand Voices + LFR + T
 Highly recommended. There are three Overload Champions leading up to the boss room that are easy to use a finisher on, so you can ensure you enter the boss fight with enough ammo.
 
 ### Boss Room Melt
+
 - Well of Radiance / Titan Bubble
 - Falling Guillotine
 - One Thousand Voices / Linear Fusion Rifles, with Particle Deconstruction
