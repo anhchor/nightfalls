@@ -175,7 +175,7 @@ content styling
     grid-row: span 5;
   }
   .post__toc {
-    grid-row: span 3;  
+    grid-row: span 4;  
     grid-column: 2 / 3;
   }
 }

@@ -40,7 +40,7 @@ Heavy on ad-clear efficiency. Clear spawns immediately, before progressing. Lowe
 ---
 
 
-## Strategy
+## Walkthrough
 
 The main goal is ad-clear. It's very easy to get overwhelmed in the boss room and wipe. Watch out for Void snipers, which can one-shot you. Mini Screebs will kill you.
 

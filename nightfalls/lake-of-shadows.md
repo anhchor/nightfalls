@@ -44,7 +44,7 @@ Destroying the Taken blights in reverse order (3 → 2 → 1) prevents waves of 
 ---
 
 
-## Strategy
+## Walkthrough
 
 Lake of Shadows is a relatively easy nightfall, so it's forgiving on what strategy you use. It's recommended to prioritize burning down the boss, because surviving in the boss room would be very challenging.
 

@@ -42,7 +42,7 @@ Pikes and snipers in the sparrow sections will kill you. Boss room gets messy.
 ---
 
 
-## Strategy
+## Walkthrough
 
 
 ### Arc Pulses #1

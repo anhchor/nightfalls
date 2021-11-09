@@ -95,11 +95,16 @@
 <section class="content">
 
 
+  <nav class="post__toc">
+    <p class="post__toc-heading">Table of Contents</p>
+    <ol class="post__toc-list"></ol>
+  </nav>
+
 
 
 
 <h2 id="summary" tabindex="-1">Summary</h2>
-<p>Relatively easy, though long. High enemy density.</p>
+<p>Relatively easy, though long. High enemy density throughout. Long-range weapons are helpful for snipers and tank damage in the middle section.</p>
 <hr>
 <h2 id="nightfall-info" tabindex="-1">Nightfall Info</h2>
 <h3 id="champions" tabindex="-1">Champions</h3>
@@ -109,28 +114,35 @@
 </ul>
 <h3 id="shields" tabindex="-1">Shields</h3>
 <ul>
-<li><strong>Arc</strong>: Arc Knights.</li>
-<li><strong>Solar</strong>: Solar Wizards.</li>
-<li><strong>Void</strong>: Void Servitors in the boss room.</li>
+<li><strong>Arc</strong> (many): Arc Knights and Captains.</li>
+<li><strong>Solar</strong> (few): Solar Wizards, only in the ghost scanning room.</li>
+<li><strong>Void</strong> (8): Void Servitors in the boss room.</li>
 </ul>
-<!-- ## Walkthrough
-
-### Entrance
-
-Go along the far right side to skip enemies. At the entrance to the building, clear enemies from afar before going in.
-
-
-### Ghost Scanning Room
-
-
-### Tank Area
-
-- The tank will one-shot you, and splash damage from the laser can kill you. Don't be anywhere near the shot. Breaking one of the tank's legs will disable it for a short while, preventing it from shooting its laser attack.
-- Watch for snipers in the back.
-- The skiff will one-shot you.
-
-
-### Boss Room -->
+<hr>
+<h2 id="walkthrough" tabindex="-1">Walkthrough</h2>
+<h3 id="entrance" tabindex="-1">Entrance</h3>
+<p>Go along the far right side to skip enemies. At the entrance to the building, clear enemies from afar before going in.</p>
+<h3 id="ghost-scanning-room" tabindex="-1">Ghost Scanning Room</h3>
+<p>Standing on the balcony behind the ghost scanning is relatively safe if you have a Well. Occasionally ads will spawn from the door behind you.</p>
+<h3 id="tank-area" tabindex="-1">Tank Area</h3>
+<ul>
+<li>The tank will one-shot you, and splash damage from the laser can kill you. Don't be anywhere near the shot. Breaking one of the tank's legs will disable it for a short while, preventing it from shooting its laser attack.</li>
+<li>Watch for snipers in the back where the tank is, along the far right side when you first enter, and on the building.</li>
+<li>A Fallen skiff drops off reinforcements and will one-shot you.</li>
+</ul>
+<h3 id="boss-room" tabindex="-1">Boss Room</h3>
+<p>This is an ad-heavy encounter with spawns happening throughout, though by hanging out in the left room you'll be pretty safe.</p>
+<ul>
+<li>Occasionally, the boss may teleport right outside the window of the left room and look at you.</li>
+<li>There are four Void servitors for each of the two immune phases.</li>
+<li>At the boss's second immune phase, two Overload captains will spawn.</li>
+</ul>
+<hr>
+<h2 id="personal-loadout" tabindex="-1">Personal Loadout</h2>
+<ul>
+<li>2x Well of Radiance with Phoenix Protocol + 1x Bubble with Crest of Alpha Lupi for chaining Supers</li>
+<li>Ticuu's, Le Monarque, Witherhoard</li>
+</ul>
 
 
 </section>
@@ -140,6 +152,33 @@ Go along the far right side to skip enemies. At the entrance to the building, cl
 
 </main>
 
+
+<script>
+const headings = document.querySelectorAll("h2");
+const tocList = document.querySelector(".post__toc-list");
+
+function generateTOC() {
+  for (let i = 0; i < headings.length; i++) {
+    let listItem = document.createElement("li");
+    listItem.setAttribute("class", "post__toc-item");
+
+    let listURL = "#" + headings[i].getAttribute("id");
+
+    let listItemLink = document.createElement("a");
+    listItemLink.setAttribute("href", listURL);
+    listItemLink.setAttribute("class", "post__toc-link");
+
+    let listItemTitle = document.createTextNode(headings[i].innerText);
+
+    listItem.appendChild(listItemLink);
+    listItemLink.appendChild(listItemTitle);
+    tocList.appendChild(listItem);
+  }
+}
+
+generateTOC();
+
+</script>
 
 
   <footer class="site-footer">
