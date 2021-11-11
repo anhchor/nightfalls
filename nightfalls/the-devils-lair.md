@@ -14,7 +14,6 @@ shields:
   - Solar
   - Void
 image: sepiks_edit.jpg
-current: true
 toc: true
 excerpt: Relatively easy, though long. High enemy density.
 boss: Sepiks Prime

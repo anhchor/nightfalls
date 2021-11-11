@@ -443,6 +443,8 @@ homepage
   grid-template-columns: minmax(30ch, 1fr) 1fr;
   grid-column-gap: var(--sp);
   align-items: center;
+
+  margin-top: var(--sp-lg);
 }
 @media screen and (max-width: 580px) {
   .home-nf {
@@ -501,6 +503,9 @@ homepage
   width: 100%;
 }
 
+.home-nf__image {
+  margin: 0;
+}
 .home-nf__image > figcaption {
   color: var(--text-sub);
   font-family: var(--font-mono);
