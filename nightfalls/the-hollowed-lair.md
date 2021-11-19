@@ -13,6 +13,9 @@ eleventyNavigation:
   image: fanatic_edit.jpg
 toc: true
 image: fanatic_edit.jpg
+current: true
+excerpt: Heavy on ad-clear efficiency. Lower plates gradually, stop when enemies spawn to clear them, then continue lowering. Damage boss slowly, stop when enemies spawn, then continue after clearing.
+
 ---
 
 ## Summary

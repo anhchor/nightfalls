@@ -15,7 +15,6 @@ shields:
   - Void
 image: ignovun_edit.jpg
 boss: Ignovun, Chosen of Caiatl
-current: true
 excerpt: oh no
 ---
 
