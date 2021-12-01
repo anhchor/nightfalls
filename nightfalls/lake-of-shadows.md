@@ -51,12 +51,22 @@ Lake of Shadows is a relatively easy nightfall, so it's forgiving on what strate
 
 ### Taken Blights
 
-Destroy them in reverse order (3 → 2 → 1). This prevents waves of ads and Champions from spawning in. This does not affect Platinum Rewards, as the Champions don't spawn in at all.
+Destroy them in reverse order (3 → 2 → 1). This prevents waves of ads and Champions from spawning in. This does not affect Platinum Rewards, as the Champions don't spawn in at all. You can stand on top of the blight without taking damage.
 
 
 ### Bridge
 
-Watch out for Taken boop cannons in the walls that will launch you off the map or into walls.
+You can bait the two Unstoppable Champions at the entrance into the hallway to pick them off one at a time. Watch out for Taken boop cannons in the walls that will launch you off the map or into walls. It's possible for your Ghost to be located in an unreachable spot if you die.
+
+
+### Stairs
+
+Watch for solar-shielded Taken Knights that have an AOE fire attack.
+
+
+### Wizard Room
+
+The Wizard has a Void shield and summons Shadow Thrall.
 
 
 ### Boss Room

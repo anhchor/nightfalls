@@ -15,6 +15,7 @@ excerpt: Go slowly, because pikes and random snipers will kill you. The boss roo
 image: thaviks_edit.jpg
 boss: Thaviks, the Depraved
 toc: true
+current: true
 ---
 
 
@@ -62,7 +63,7 @@ Not sure how many, but this room has _lots_ of Overload Champions, and at one po
 
 ### Arc Pulses #2
 
-Occasionally, there may be a public event banner. Hit that for full ammo and super energy.
+Occasionally, there may be a public event banner. Pikes will still kill you.
 
 
 ### Tank

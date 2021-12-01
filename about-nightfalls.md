@@ -28,3 +28,19 @@ If you get **Platinum Completion** by defeating all Champions, you get:
 - Enhancement Prisms (commmon)
 - Nightfall Weapon (common)
 - Exotic Armour (common)
+
+
+<!-- ---
+
+
+## Builds
+
+These are based on personal experience.
+
+
+### Mods
+
+- **Protective Light** (CWL, Void, 2 energy)
+- **Taking Charge** (CWL, 3 energy)
+- **Particle Deconstruction** (Class Item, 7 energy) – if using Fusion / Linear Fusion Rifles
+- **Focusing Lens** (Class Item, 3 energy) – if someone is running Stasis. Weapon damage when inside a Well of Radiance counts, so the Stasis team member can also use this. -->
