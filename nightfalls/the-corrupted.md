@@ -15,6 +15,7 @@ eleventyNavigation:
   image: sedia_edit.jpg
 image: sedia_edit.jpg
 boss: Sedia, the Corrupted
+current: true
 ---
 
 

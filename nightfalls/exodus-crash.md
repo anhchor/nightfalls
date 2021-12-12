@@ -15,7 +15,6 @@ excerpt: Go slowly, because pikes and random snipers will kill you. The boss roo
 image: thaviks_edit.jpg
 boss: Thaviks, the Depraved
 toc: true
-current: true
 ---
 
 
