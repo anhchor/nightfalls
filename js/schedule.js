@@ -101,7 +101,7 @@ function fillInfo() {
     let endMonth = startEndDates.end.toLocaleString('default', { month: 'short' });
 
     if (startMonth == endMonth) {
-      endDate = endDate.slice(5);
+      endDate = startEndDates.end.toLocaleString('default', { day: 'numeric' });
     }
     
 
