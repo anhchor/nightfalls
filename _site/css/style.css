@@ -10,6 +10,7 @@
 :root {
   --bg: #0b0e17;
   --bg-alt: #090a0e;
+  --bg-alt-light: #151b2c;
 
   --text: #dbe1e8;
   --text-sub: #90A8C1;
@@ -684,6 +685,14 @@ schedule
   grid-column-gap: 1em;
 
   border-bottom: 1px solid var(--border);  
+}
+.schedule__item--current {
+  background: var(--bg-alt-light);
+  font-weight: bold;
+
+}
+.schedule__item--current > .schedule__date {
+  color: var(--blue);
 }
 @media screen and (min-width: 681px) {
   .schedule__item > * {
