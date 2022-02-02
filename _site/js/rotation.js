@@ -2,7 +2,8 @@ function toSlug(text) {
   return text
     .toLowerCase()
     .replace(/ /g,'-') // replace space with dash
-    .replace(/’/g,"'") // replace curly quote with straight quote
+    .replace(/’/g,"") // remove curly quote
+    .replace(/'/g,"") // remove straight quote
     ;
 }
 

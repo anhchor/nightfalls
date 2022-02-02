@@ -91,7 +91,8 @@
       }
     ],
     "image": "sedia_edit.jpg",
-    "boss": "Sedia, the Corrupted"
+    "boss": "Sedia, the Corrupted",
+    "excerpt": "Throw orbs to teammates to charge them before breaking enemy shields. Killing the large Ogres in the ogre room will despawn enemies and champions, which will prevent Platinum completion."
   },
   {
     "name": "The Devils’ Lair",
@@ -142,6 +143,7 @@
       }
     ],
     "image": "ignovun_edit.jpg",
-    "boss": "Ignovun, Chosen of Caiatl"
+    "boss": "Ignovun, Chosen of Caiatl",
+    "excerpt": "oh no"
   }
 ]
