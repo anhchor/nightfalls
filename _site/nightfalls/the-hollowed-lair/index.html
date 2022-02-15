@@ -91,11 +91,6 @@
 <section class="content">
 
 
-  <nav class="post__toc">
-    <p class="post__toc-heading">Table of Contents</p>
-    <ol class="post__toc-list"></ol>
-  </nav>
-
 
 
 
@@ -143,18 +138,15 @@
 </ul>
 <h4>Spawn and Tether Patterns</h4>
 <p>These are tied to boss health, at every 1/9th.</p>
-<aside>
-<p>Note: I <em>think</em> this is the flow. Left/Right may be mixed up, but this is the general idea.</p>
-</aside>
 <ol>
 <li>Right</li>
 <li>Left</li>
 <li>Middle – three waves spawn, and an Overload Champion</li>
-<li>Left + Tether</li>
-<li>Right + Tether</li>
+<li>Tether + Left</li>
+<li>Tether + Right</li>
 <li>Middle - three waves spawn, and an Unstoppable Champion</li>
-<li>Right + Tether</li>
-<li>Left + Tether</li>
+<li>Tether + Right</li>
+<li>Tether + Left</li>
 </ol>
 <p>After the second tether in this final section, you can burn down the boss.</p>
 <hr>
@@ -170,35 +162,9 @@
 
 
 
+
 </main>
 
-
-<script>
-const headings = document.querySelectorAll("h2");
-const tocList = document.querySelector(".post__toc-list");
-
-function generateTOC() {
-  for (let i = 0; i < headings.length; i++) {
-    let listItem = document.createElement("li");
-    listItem.setAttribute("class", "post__toc-item");
-
-    let listURL = "#" + headings[i].getAttribute("id");
-
-    let listItemLink = document.createElement("a");
-    listItemLink.setAttribute("href", listURL);
-    listItemLink.setAttribute("class", "post__toc-link");
-
-    let listItemTitle = document.createTextNode(headings[i].innerText);
-
-    listItem.appendChild(listItemLink);
-    listItemLink.appendChild(listItemTitle);
-    tocList.appendChild(listItem);
-  }
-}
-
-generateTOC();
-
-</script>
 
 
   <footer class="site-footer">

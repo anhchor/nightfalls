@@ -95,16 +95,11 @@
 <section class="content">
 
 
-  <nav class="post__toc">
-    <p class="post__toc-heading">Table of Contents</p>
-    <ol class="post__toc-list"></ol>
-  </nav>
-
 
 
 
 <h2>Summary</h2>
-<p>Destroying the Taken blights in reverse order (3 → 2 → 1) prevents waves of Champions and ads from spawning. There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy.</p>
+<p>There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy.</p>
 <hr>
 <h2>Nightfall Info</h2>
 <h3>Champions</h3>
@@ -122,7 +117,10 @@
 <h2>Walkthrough</h2>
 <p>Lake of Shadows is a relatively easy nightfall, so it's forgiving on what strategy you use. It's recommended to prioritize burning down the boss, because surviving in the boss room would be very challenging.</p>
 <h3>Taken Blights</h3>
-<p>Destroy them in reverse order (3 → 2 → 1). This prevents waves of ads and Champions from spawning in. This does not affect Platinum Rewards, as the Champions don't spawn in at all. You can stand on top of the blight without taking damage.</p>
+<p>You can stand on top of the blights to destroy them without taking damage.</p>
+<aside>
+<p>Previously, there was a bug where you could destroy the blights in reverse order to prevent enemies and champions from spawning in. This has been patched and no longer works.</p>
+</aside>
 <h3>Bridge</h3>
 <p>You can bait the two Unstoppable Champions at the entrance into the hallway to pick them off one at a time. Watch out for Taken boop cannons in the walls that will launch you off the map or into walls. It's possible for your Ghost to be located in an unreachable spot if you die.</p>
 <h3>Stairs</h3>
@@ -131,7 +129,7 @@
 <p>The Wizard has a Void shield and summons Shadow Thrall.</p>
 <h3>Boss Room</h3>
 <p>The boss room gets chaotic, so it's important to burn down the boss as quickly as possible. Enemies start spawning in shortly after the boss spawns.</p>
-<p>Anecdotally: Well of Radiance + Focusing Lens + 2x One Thousand Voices + LFR + Thundercrash will melt the boss very quickly.</p>
+<p>Anecdotally: Well of Radiance + 2x Sleeper Simulant + Divinity + Thundercrash will melt the boss.</p>
 <hr>
 <h2>Loadout</h2>
 <h3>Aeon Gauntlets</h3>
@@ -140,7 +138,7 @@
 <ul>
 <li>Well of Radiance / Titan Bubble</li>
 <li>Falling Guillotine</li>
-<li>One Thousand Voices / Linear Fusion Rifles, with Particle Deconstruction</li>
+<li>One Thousand Voices / Sleeper Simulant / Linear Fusion Rifles, with Particle Deconstruction</li>
 <li>Focusing Lens + Stasis</li>
 </ul>
 
@@ -150,35 +148,9 @@
 
 
 
+
 </main>
 
-
-<script>
-const headings = document.querySelectorAll("h2");
-const tocList = document.querySelector(".post__toc-list");
-
-function generateTOC() {
-  for (let i = 0; i < headings.length; i++) {
-    let listItem = document.createElement("li");
-    listItem.setAttribute("class", "post__toc-item");
-
-    let listURL = "#" + headings[i].getAttribute("id");
-
-    let listItemLink = document.createElement("a");
-    listItemLink.setAttribute("href", listURL);
-    listItemLink.setAttribute("class", "post__toc-link");
-
-    let listItemTitle = document.createTextNode(headings[i].innerText);
-
-    listItem.appendChild(listItemLink);
-    listItemLink.appendChild(listItemTitle);
-    tocList.appendChild(listItem);
-  }
-}
-
-generateTOC();
-
-</script>
 
 
   <footer class="site-footer">

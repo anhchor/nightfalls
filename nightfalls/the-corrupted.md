@@ -15,7 +15,6 @@ eleventyNavigation:
   image: sedia_edit.jpg
 image: sedia_edit.jpg
 boss: Sedia, the Corrupted
-current: true
 ---
 
 
@@ -40,3 +39,27 @@ Throw orbs to teammates to charge them before breaking enemy shields. Killing th
 - **Arc** (many): Knights
 - **Solar** (many): Knights? They show up in the Ogre room and the boss rooms.
 - **Void** (many): Acolytes
+
+
+---
+
+
+## Walkthrough
+
+### Entrance
+
+Shoot down the mini-boss's Axiom darts because they will kill you.
+
+
+### Elevator Room
+
+You must charge the orbs by passing them to your teammates, before breaking the enemy shields with it.
+
+
+### Double Ogre Room
+
+Killing the large ogre before the Champions will despawn them. You can do this to save time and ammo, though it will prevent Platinum completion.
+
+
+### Sedia
+

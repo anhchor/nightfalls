@@ -20,7 +20,7 @@ image: grask_edit.jpg
 
 ## Summary
 
-Destroying the Taken blights in reverse order (3 → 2 → 1) prevents waves of Champions and ads from spawning. There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy.
+There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy.
 
 
 ---
@@ -51,7 +51,13 @@ Lake of Shadows is a relatively easy nightfall, so it's forgiving on what strate
 
 ### Taken Blights
 
-Destroy them in reverse order (3 → 2 → 1). This prevents waves of ads and Champions from spawning in. This does not affect Platinum Rewards, as the Champions don't spawn in at all. You can stand on top of the blight without taking damage.
+You can stand on top of the blights to destroy them without taking damage.
+
+<aside>
+
+Previously, there was a bug where you could destroy the blights in reverse order to prevent enemies and champions from spawning in. This has been patched and no longer works.
+
+</aside>
 
 
 ### Bridge
@@ -73,7 +79,7 @@ The Wizard has a Void shield and summons Shadow Thrall.
 
 The boss room gets chaotic, so it's important to burn down the boss as quickly as possible. Enemies start spawning in shortly after the boss spawns.
 
-Anecdotally: Well of Radiance + Focusing Lens + 2x One Thousand Voices + LFR + Thundercrash will melt the boss very quickly.
+Anecdotally: Well of Radiance + 2x Sleeper Simulant + Divinity + Thundercrash will melt the boss.
 
 
 ---
@@ -88,5 +94,5 @@ Highly recommended. There are three Overload Champions leading up to the boss ro
 
 - Well of Radiance / Titan Bubble
 - Falling Guillotine
-- One Thousand Voices / Linear Fusion Rifles, with Particle Deconstruction
+- One Thousand Voices / Sleeper Simulant / Linear Fusion Rifles, with Particle Deconstruction
 - Focusing Lens + Stasis

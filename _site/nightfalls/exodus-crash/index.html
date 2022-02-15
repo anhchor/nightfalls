@@ -87,11 +87,6 @@
 <section class="content">
 
 
-  <nav class="post__toc">
-    <p class="post__toc-heading">Table of Contents</p>
-    <ol class="post__toc-list"></ol>
-  </nav>
-
 
 
 
@@ -151,35 +146,9 @@
 
 
 
+
 </main>
 
-
-<script>
-const headings = document.querySelectorAll("h2");
-const tocList = document.querySelector(".post__toc-list");
-
-function generateTOC() {
-  for (let i = 0; i < headings.length; i++) {
-    let listItem = document.createElement("li");
-    listItem.setAttribute("class", "post__toc-item");
-
-    let listURL = "#" + headings[i].getAttribute("id");
-
-    let listItemLink = document.createElement("a");
-    listItemLink.setAttribute("href", listURL);
-    listItemLink.setAttribute("class", "post__toc-link");
-
-    let listItemTitle = document.createTextNode(headings[i].innerText);
-
-    listItem.appendChild(listItemLink);
-    listItemLink.appendChild(listItemTitle);
-    tocList.appendChild(listItem);
-  }
-}
-
-generateTOC();
-
-</script>
 
 
   <footer class="site-footer">

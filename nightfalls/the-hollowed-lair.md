@@ -81,20 +81,14 @@ Enemy spawns are tied to boss health, at approximately every 1/9th of his health
 
 These are tied to boss health, at every 1/9th.
 
-<aside>
-
-Note: I _think_ this is the flow. Left/Right may be mixed up, but this is the general idea.
-
-</aside>
-
 1. Right
 2. Left
 3. Middle – three waves spawn, and an Overload Champion
-4. Left + Tether
-5. Right + Tether
+4. Tether + Left
+5. Tether + Right
 6. Middle - three waves spawn, and an Unstoppable Champion
-7. Right + Tether
-8. Left + Tether
+7. Tether + Right
+8. Tether + Left
 
 
 After the second tether in this final section, you can burn down the boss.
