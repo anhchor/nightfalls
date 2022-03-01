@@ -118,10 +118,10 @@ function fillInfo() {
     Current Nightfall → ${nfDatesStart} to ${nfDatesEnd}
   `;
 
-  let nfDrop = document.querySelector('.nf__drops');
-  nfDrop.innerHTML = `
-    <strong>Drops</strong>: ${currentDrop}
-  `;
+  // let nfDrop = document.querySelector('.nf__drops');
+  // nfDrop.innerHTML = `
+  //   <strong>Drops</strong>: ${currentDrop}
+  // `;
 
   for (i = 0; i < gmList[currentGmId].champions.length; i++) {
     let newChampion = document.createElement('span');
@@ -155,7 +155,7 @@ function fillInfo() {
 
 
 
-fetch('/js/gm_s15.json')
+fetch('/js/gm_s16.json')
   .then(
     function(response) {
       if (response.status !== 200) {
@@ -173,10 +173,6 @@ fetch('/js/gm_s15.json')
         currentDrop = drops[currentDropId];
 
         fillInfo();
-
-        
-        console.log(`It's currently week ${currentWeekOfSeason} and the GM is ${currentGm} (${currentGmId}) and drops ${currentDrop}.`);
-
       });
     }
   )

@@ -11,19 +11,26 @@ const months = [
 ]
 
 const gmList = [
-  "The Hollowed Lair", "Lake of Shadows", "Exodus Crash",
-  "The Corrupted", "The Devils’ Lair", "Proving Grounds"
+  "The Scarlet Keep", "The Arms Dealer", "The Lightblade",
+  "The Glassway", "Fallen S.A.B.E.R.", "Birthplace of the Vile"
 ]
 const drops = [
-  "PLUG ONE.1 and Uzume RR4",
-  "THE SWARM and The Palindrome",
-  "The Comedian and Shadow Price",
-  "Hung Jury SR4 and The Hothead"
+  "??"
 ]
+// const drops = [
+//   "PLUG ONE.1 and Uzume RR4",
+//   "THE SWARM and The Palindrome",
+//   "The Comedian and Shadow Price",
+//   "Hung Jury SR4 and The Hothead"
+// ]
 
 
 let gmStart = new Date(Date.UTC(2021, 9, 5, 17, 0, 0));
 let gmEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
+
+let risenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
+let risenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+
 let currentGm;
 let currentGmId;
 
@@ -31,8 +38,8 @@ let now = Date.now();
 //let now = new Date(Date.UTC(2022, 0, 13, 17, 0, 0));
 
 
-let currentDayOfSeason = toDays(now - gmStart);
-let currentWeekOfSeason = toWeeks(now - gmStart);
+let currentDayOfSeason = toDays(now - risenStart);
+let currentWeekOfSeason = toWeeks(now - risenStart);
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
@@ -50,10 +57,10 @@ function gmStartEndDates(week) {
   let daysAddedStart = week * 7;
   let daysAddedEnd = daysAddedStart + 6;
 
-  let currentWeekStart = new Date(Date.UTC(2021, 9, 5, 17, 0, 0));
+  let currentWeekStart = new Date(Date.UTC(2021, 1, 22, 17, 0, 0));
   currentWeekStart = new Date(currentWeekStart.setDate(currentWeekStart.getDate() + daysAddedStart));
   
-  let currentWeekEnd = new Date(Date.UTC(2021, 9, 5, 17, 0, 0));
+  let currentWeekEnd = new Date(Date.UTC(2021, 1, 22, 17, 0, 0));
   currentWeekEnd = new Date(currentWeekEnd.setDate(currentWeekEnd.getDate() + daysAddedEnd));
   
   return { start: currentWeekStart, end: currentWeekEnd };
@@ -84,7 +91,7 @@ function addDays(date, days) {
 
 
 
-let seasonDays = toDays(gmEnd - gmStart);
+let seasonDays = toDays(risenEnd - risenStart);
 let seasonWeeks = Math.floor(seasonDays / 7);
 
 
@@ -110,10 +117,14 @@ function fillInfo() {
 
     let newWeek = document.createElement('li');
     newWeek.classList.add('schedule__item');
+    // newWeek.innerHTML = `
+    //   <p class="schedule__date">${startDate} – ${endDate}</p>
+    //   <p class="schedule__nf">${currentGm}</p>
+    //   <p class="schedule__drop">${currentDrop}</p>
+    // `;
     newWeek.innerHTML = `
       <p class="schedule__date">${startDate} – ${endDate}</p>
       <p class="schedule__nf">${currentGm}</p>
-      <p class="schedule__drop">${currentDrop}</p>
     `;
     scheduleWrapper.appendChild(newWeek);
 

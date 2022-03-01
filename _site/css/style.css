@@ -407,9 +407,15 @@ header
     border-bottom: 1px solid var(--border);
   }
   .site-nav__list {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 1em; */
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site-nav__item {
+    margin-right: 1em;
   }
 }
 .site-nav {
@@ -577,7 +583,8 @@ homepage
   opacity: .5;
   transition: .2s ease-out;
 }
-.home-list > a:hover .nf-card__image {
+.home-list > a:hover .nf-card__image,
+.nf-card:hover .nf-card__image {
   opacity: 1;
 }
 .nf-card__title {
