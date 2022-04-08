@@ -24,6 +24,13 @@ layout: layout.liquid
         </span>
       {% endfor %}
     </li>
+    {% if burn %}
+    <li><strong>Burn</strong>: 
+      <span class="nf-meta__item">
+        <img src="/svg/{{ burn }}.svg"> {{ burn }}
+      </span>
+    </li>
+    {% endif %}
   </ul>
 </header>
 

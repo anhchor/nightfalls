@@ -106,6 +106,7 @@ function fillDates() {
 const nfTitle = document.querySelector('.nf__name');
 const nfChampions = document.querySelector('.nf__champions');
 const nfShields = document.querySelector('.nf__shields');
+const nfBurn = document.querySelector('.nf__burn');
 const nfExcerpt = document.querySelector('.nf__excerpt');
 
 function fillInfo() {
@@ -134,14 +135,21 @@ function fillInfo() {
     nfChampions.appendChild(newChampion);
   }
 
-  // for (i = 0; i < gmList[currentGmId].shields.length; i++) {
-  //   let newShield = document.createElement('span');
-  //   newShield.classList.add('home-nf__meta-item');
-  //   newShield.innerHTML = `
-  //      <img src="/svg/${gmList[currentGmId].shields[i].element}.svg" alt=""> ${gmList[currentGmId].shields[i].element}
-  //   `;
-  //   nfShields.appendChild(newShield);
-  // }
+  for (i = 0; i < gmList[currentGmId].shields.length; i++) {
+    let newShield = document.createElement('span');
+    newShield.classList.add('home-nf__meta-item');
+    newShield.innerHTML = `
+       <img src="/svg/${gmList[currentGmId].shields[i].element}.svg" alt=""> ${gmList[currentGmId].shields[i].element}
+    `;
+    nfShields.appendChild(newShield);
+  }
+
+  let newBurn = document.createElement('span');
+  newBurn.classList.add('home-nf__meta-item');
+  newBurn.innerHTML = `
+       <img src="/svg/${gmList[currentGmId].burn}.svg" alt=""> ${gmList[currentGmId].burn}
+    `;
+  nfBurn.appendChild(newBurn);
 
   let nfImage = document.querySelector('.nf__image');
   nfImage.innerHTML = `

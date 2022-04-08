@@ -19,7 +19,7 @@ All Grandmaster Nightfalls have the following modifiers:
 - **Extinguish**: if you wipe, you go back to orbit.
 - **Contest Mode**: your equipment is capped at 1575, and enemies are at 1600.
 - **Join In Progress Disabled**: you can't join a GM that's in-progress.
-
+- **Acute Element Burn**: +25% damage dealt and +50% damage received of that element.
 
 
 ## Rewards
@@ -28,5 +28,5 @@ If you get **Platinum Completion** by defeating all Champions, you get:
 
 - Ascendant Shards (common)
 - Enhancement Prisms (commmon)
-- Nightfall Weapon (common)
+- Nightfall Weapon (guaranteed)
 - Exotic Armour (common)
