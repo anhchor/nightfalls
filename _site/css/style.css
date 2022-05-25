@@ -609,6 +609,20 @@ homepage
 }
 
 
+.archive__title {
+  grid-column: 1 / -1;
+  margin: 0;
+
+  color: var(--blue);
+  font-size: 1.15em;
+}
+.archive__desc {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+
+  font-size: var(--font-size-sm);
+}
 
 
 
