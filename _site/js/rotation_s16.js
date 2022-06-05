@@ -11,6 +11,12 @@ const months = [
   "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 ]
 
+const gmHaunted = [
+  "Proving Grounds", "The Insight Terminus",
+  "Warden of Nothing", "The Corrupted",
+  "The Inverted Spire", "The Arms Dealer"
+]
+
 const drops = [
   "PLUG ONE.1 and Uzume RR4",
   "THE SWARM and The Palindrome",
@@ -20,8 +26,8 @@ const drops = [
 
 let gmList;
 
-let risenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
-let risenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const hauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const hauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
 
 let currentGm;
 let currentGmId;
@@ -30,8 +36,8 @@ let now = Date.now();
 // let now = new Date(Date.UTC(2022, 0, 13, 17, 0, 0));
 
 
-let currentDayOfSeason = toDays(now - risenStart);
-let currentWeekOfSeason = toWeeks(now - risenStart);
+let currentDayOfSeason = toDays(now - hauntedStart);
+let currentWeekOfSeason = toWeeks(now - hauntedStart);
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
@@ -49,10 +55,10 @@ function gmStartEndDates() {
   let daysAddedStart = (currentWeekOfSeason - 1) * 7;
   let daysAddedEnd = daysAddedStart + 6;
 
-  let currentWeekStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
+  let currentWeekStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
   currentWeekStart = new Date(currentWeekStart.setDate(currentWeekStart.getDate() + daysAddedStart));
   
-  let currentWeekEnd = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
+  let currentWeekEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
   currentWeekEnd = new Date(currentWeekEnd.setDate(currentWeekEnd.getDate() + daysAddedEnd));
   return { start: currentWeekStart, end: currentWeekEnd };
 
@@ -89,8 +95,8 @@ let cardDate = document.querySelectorAll('.nf-card__note');
 function fillDates() {
 
   for (i = 0; i < gmList.length; i++) {
-    let currentWeekOfSeasonStart = addDays(risenStart, (7 * (currentWeekOfSeason - 1)));
-    let currentWeekOfSeasonEnd = addDays(risenEnd, ((7 * currentWeekOfSeason) - 1));
+    let currentWeekOfSeasonStart = addDays(hauntedStart, (7 * (currentWeekOfSeason - 1)));
+    let currentWeekOfSeasonEnd = addDays(hauntedEnd, ((7 * currentWeekOfSeason) - 1));
 
     cardDate[i].textContent = `
       ${months[currentWeekOfSeasonStart.getUTCMonth()]} ${currentWeekOfSeasonStart.getUTCDate()} – ${months[currentWeekOfSeasonEnd.getUTCMonth()]} ${currentWeekOfSeasonEnd.getUTCDate()}
@@ -165,7 +171,7 @@ function fillInfo() {
 
 
 
-fetch('/js/gm_s16.json')
+fetch('/js/gm.json')
   .then(
     function(response) {
       if (response.status !== 200) {

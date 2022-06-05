@@ -10,9 +10,11 @@ const months = [
   "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 ]
 
-const gmList = [
-  "The Scarlet Keep", "The Arms Dealer", "The Lightblade",
-  "The Glassway", "Fallen S.A.B.E.R.", "Birthplace of the Vile"
+
+const gmHaunted = [
+  "Proving Grounds", "The Insight Terminus",
+  "Warden of Nothing", "The Corrupted",
+  "The Inverted Spire", "The Arms Dealer"
 ]
 const drops = [
   "??"
@@ -25,11 +27,11 @@ const drops = [
 // ]
 
 
-let gmStart = new Date(Date.UTC(2021, 9, 5, 17, 0, 0));
-let gmEnd = new Date(Date.UTC(2022, 1, 22, 18, 0, 0));
+let gmStart = new Date(Date.UTC(2021, 6, 5, 17, 0, 0));
+let gmEnd = new Date(Date.UTC(2022, 7, 23, 18, 0, 0));
 
-let risenStart = new Date(Date.UTC(2022, 1, 22, 17, 0, 0));
-let risenEnd = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const hauntedStart = new Date(Date.UTC(2022, 4, 24, 17, 0, 0));
+const hauntedEnd = new Date(Date.UTC(2022, 7, 23, 17, 0, 0));
 
 let currentGm;
 let currentGmId;
@@ -38,8 +40,8 @@ let now = Date.now();
 //let now = new Date(Date.UTC(2022, 0, 13, 17, 0, 0));
 
 
-let currentDayOfSeason = toDays(now - risenStart);
-let currentWeekOfSeason = toWeeks(now - risenStart);
+let currentDayOfSeason = toDays(now - hauntedStart);
+let currentWeekOfSeason = toWeeks(now - hauntedStart);
 
 function toDays(x) {
   x = x / 1000 / 60 / 60 / 24;
@@ -57,10 +59,10 @@ function gmStartEndDates(week) {
   let daysAddedStart = week * 7;
   let daysAddedEnd = daysAddedStart + 6;
 
-  let currentWeekStart = new Date(Date.UTC(2021, 1, 22, 17, 0, 0));
+  let currentWeekStart = new Date(Date.UTC(2021, 4, 24, 17, 0, 0));
   currentWeekStart = new Date(currentWeekStart.setDate(currentWeekStart.getDate() + daysAddedStart));
   
-  let currentWeekEnd = new Date(Date.UTC(2021, 1, 22, 17, 0, 0));
+  let currentWeekEnd = new Date(Date.UTC(2021, 4, 24, 17, 0, 0));
   currentWeekEnd = new Date(currentWeekEnd.setDate(currentWeekEnd.getDate() + daysAddedEnd));
   
   return { start: currentWeekStart, end: currentWeekEnd };
@@ -83,15 +85,8 @@ const getTodayId = function(week, list) {
 
 
 
-function addDays(date, days) {
-  let result = new Date(date);
-  result.setDate(result.getDate() + days);
-  return result;
-}
 
-
-
-let seasonDays = toDays(risenEnd - risenStart);
+let seasonDays = toDays(hauntedEnd - hauntedStart);
 let seasonWeeks = Math.floor(seasonDays / 7);
 
 
@@ -112,7 +107,7 @@ function fillInfo() {
     }
     
 
-    let currentGm = gmList[getTodayId(n, gmList)];
+    let currentGm = gmHaunted[getTodayId(n, gmHaunted)];
     let currentDrop = drops[getTodayId(n, drops)];
 
     let newWeek = document.createElement('li');
@@ -135,35 +130,3 @@ function fillInfo() {
 
 }
 fillInfo();
-
-
-
-
-// fetch('/js/gm_s15.json')
-//   .then(
-//     function(response) {
-//       if (response.status !== 200) {
-//         console.log('Looks like there was a problem. Status Code: ' +
-//           response.status);
-//         return;
-//       }
-
-//       // Examine the text in the response
-//       response.json().then(function(data) {
-//         // gmList = data;
-//         // currentGmId = getTodayId(currentWeekOfSeason, gmList);
-//         // currentGm = gmList[currentGmId].name;
-//         // currentDropId = getTodayId(currentWeekOfSeason, drops);
-//         // currentDrop = drops[currentDropId];
-
-//         fillInfo();
-
-        
-//         // console.log(`It's currently week ${currentWeekOfSeason} and the GM is ${currentGm} (${currentGmId}) and drops ${currentDrop}.`);
-
-//       });
-//     }
-//   )
-//   .catch(function(err) {
-//     console.log('Fetch Error :-S', err);
-//   });

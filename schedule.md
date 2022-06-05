@@ -3,4 +3,4 @@ layout: schedule
 title: Schedule
 ---
 
-Grandmaster Nightfalls are available starting April 5. 
+Grandmaster Nightfalls are available starting July 5. 

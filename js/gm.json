@@ -1,0 +1,338 @@
+[
+  {
+    "name": "The Insight Terminus",
+    "location": "Nessus",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "???",
+    "image": "kargen_edit.jpg",
+    "boss": "Kargen, the Technocrat",
+    "excerpt": "There's Kargen!"
+  },
+  {
+    "name": "The Inverted Spire",
+    "location": "Nessus",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "???",
+    "image": "protheon_edit.jpg",
+    "boss": "Protheon, Modular Mind",
+    "excerpt": ""
+  },
+  {
+    "name": "Warden of Nothing",
+    "location": "The Tangled Shore",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Unstoppable"
+      },
+      {
+        "name": "Overload"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "???",
+    "image": "warden_edit.jpg",
+    "boss": "The Warden",
+    "excerpt": "dismantle mines, yes?"
+  },
+  {
+    "name": "Proving Grounds",
+    "location": "Nessus",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Arc"
+      },
+      {
+        "element": "Solar"
+      },
+      {
+        "element": "Void"
+      }
+    ],
+    "image": "ignovun_edit.jpg",
+    "boss": "Ignovun, Chosen of Caiatl",
+    "excerpt": "oh no"
+  },
+  {
+    "name": "The Arms Dealer",
+    "location": "The EDZ",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "Solar",
+    "image": "bracus-zahn_edit.jpg",
+    "boss": "Bracus Zahn",
+    "excerpt": ""
+  },
+  {
+    "name": "The Lightblade",
+    "location": "The Throne World",
+    "champions": [
+      {
+        "name": "???"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "Arc",
+    "image": "alak-hul_edit.jpg",
+    "boss": "Alak-Hul, the Lightblade",
+    "excerpt": ""
+  },
+  {
+    "name": "The Glassway",
+    "location": "Europa",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Overload"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "Void",
+    "image": "belmon_edit.jpg",
+    "boss": "Belmon, Trascendent Mind",
+    "excerpt": ""
+  },
+  {
+    "name": "Fallen S.A.B.E.R.",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Overload"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "???",
+    "image": "saber_edit.jpg",
+    "boss": "S.A.B.E.R.-2",
+    "excerpt": ""
+  },
+  {
+    "name": "Birthplace of the Vile",
+    "location": "The Throne World",
+    "champions": [
+      {
+        "name": "???"
+      }
+    ],
+    "shields": [
+      {
+        "element": "???"
+      }
+    ],
+    "burn": "???",
+    "image": "wq_edit.jpg",
+    "boss": "Heimiks, Warden of the Harvest",
+    "excerpt": ""
+  },
+  {
+    "name": "The Corrupted",
+    "location": "The Dreaming City",
+    "champions": [
+      {
+        "name": "Overload"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Arc"
+      },
+      {
+        "element": "Solar"
+      },
+      {
+        "element": "Void"
+      }
+    ],
+    "image": "sedia_edit.jpg",
+    "boss": "Sedia, the Corrupted",
+    "excerpt": "Throw orbs to teammates to charge them before breaking enemy shields. Killing the large Ogres in the ogre room will despawn enemies and champions, which will prevent Platinum completion."
+  },
+  {
+    "name": "The Devils’ Lair",
+    "location": "The Cosmodrome",
+    "champions": [
+      {
+        "name": "Overload"
+      },
+      {
+        "name": "Barrier"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Arc"
+      },
+      {
+        "element": "Solar"
+      },
+      {
+        "element": "Void"
+      }
+    ],
+    "image": "sepiks_edit.jpg",
+    "boss": "Sepiks Prime",
+    "excerpt": " Relatively easy, though long. High enemy density."
+  },
+  {
+    "name": "The Hollowed Lair",
+    "location": "The Tangled Shore",
+    "champions": [
+      {
+        "name": "Overload"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Arc"
+      },
+      {
+        "element": "Solar"
+      }
+    ],
+    "image": "fanatic_edit.jpg",
+    "boss": "Fikrul, the Fanatic",
+    "excerpt": "Heavy on ad-clear efficiency. Lower plates gradually, stop when enemies spawn to clear them, then continue lowering. Damage boss slowly, stop when enemies spawn, then continue after clearing."
+  },
+  {
+    "name": "Lake of Shadows",
+    "location": "The EDZ",
+    "champions": [
+      {
+        "name": "Overload"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Arc"
+      },
+      {
+        "element": "Solar"
+      },
+      {
+        "element": "Void"
+      }
+    ],
+    "image": "grask_edit.jpg",
+    "boss": "Grask, the Consumed",
+    "excerpt": "There are lots of Taken boop cannons, and it's easy to get physics killed. Boss needs to be melted, otherwise the boss room gets very messy."
+  },
+  {
+    "name": "Exodus Crash",
+    "location": "Nessus",
+    "champions": [
+      {
+        "name": "Overload"
+      },
+      {
+        "name": "Barrier"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Solar"
+      }
+    ],
+    "image": "thaviks_edit.jpg",
+    "boss": "Thaviks, the Depraved",
+    "excerpt": "Go slowly, because pikes and random snipers will kill you. The boss room requires survivability while being surrounded."
+  },
+  {
+    "name": "The Scarlet Keep",
+    "location": "The Moon",
+    "champions": [
+      {
+        "name": "Barrier"
+      },
+      {
+        "name": "Unstoppable"
+      }
+    ],
+    "shields": [
+      {
+        "element": "Arc"
+      },
+      {
+        "element": "Solar"
+      }
+    ],
+    "burn": "Arc",
+    "image": "hashladun_edit.jpg",
+    "boss": "Hashladûn, Daughter of Crota",
+    "excerpt": ""
+  }
+]
