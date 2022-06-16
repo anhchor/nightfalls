@@ -212,6 +212,7 @@
         "element": "Void"
       }
     ],
+    "burn": "Arc",
     "image": "sedia_edit.jpg",
     "boss": "Sedia, the Corrupted",
     "excerpt": "Throw orbs to teammates to charge them before breaking enemy shields. Killing the large Ogres in the ogre room will despawn enemies and champions, which will prevent Platinum completion."
