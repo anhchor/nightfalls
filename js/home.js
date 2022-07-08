@@ -100,10 +100,7 @@ function fillInfo(today) {
     Current Nightfall → ${nfDatesStart} to ${nfDatesEnd}
   `;
 
-  // let nfDrop = document.querySelector('.nf__drops');
-  // nfDrop.innerHTML = `
-  //   <strong>Drops</strong>: ${currentDrop}
-  // `;
+
 
   for (i = 0; i < today.champions.length; i++) {
     let newChampion = document.createElement('span');
@@ -144,6 +141,7 @@ function fillInfo(today) {
 
 
 
+
 fetch('/js/gm.json')
   .then(
     function(response) {
@@ -156,7 +154,7 @@ fetch('/js/gm.json')
       // Examine the text in the response
       response.json().then(function(data) {
         gmList = data;
-        currentGmId = getTodayId(currentWeekOfSeason, gmList);
+        currentGmId = getTodayId(currentWeekOfSeason, gmHaunted);
         currentGm = gmHaunted[currentGmId];
         currentDropId = getTodayId(currentWeekOfSeason, drops);
         currentDrop = drops[currentDropId];
