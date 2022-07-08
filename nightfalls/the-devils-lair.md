@@ -19,7 +19,7 @@ excerpt: Relatively easy, though long. High enemy density.
 boss: Sepiks Prime
 ---
 
-## Summary
+<!-- ## Summary
 
 Relatively easy, though long. High enemy density throughout. Long-range weapons are helpful for snipers and tank damage in the middle section.
 
@@ -41,10 +41,8 @@ Relatively easy, though long. High enemy density throughout. Long-range weapons 
 - **Void** (8): Void Servitors in the boss room.
 
 
----
+--- -->
 
-
-## Walkthrough
 
 ### Entrance
 

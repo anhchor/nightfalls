@@ -1,0 +1,61 @@
+---
+layout: layout.liquid
+---
+
+<nav class="site-nav">
+  <ul class="site-nav__list">
+    <li class="site-nav__item"><a href="/schedule">nightfalls</a></li>
+    <li class="site-nav__item"><a href="/schedule">schedule</a></li>
+    <li class="site-nav__item"><a href="/about-nightfalls">about</a></li>
+    <li class="site-nav__item"><a href="/archive">archive</a></li>
+  </ul>
+</nav>
+
+<main class="nf">
+  <section class="nf__intro">
+    <h1 class="nf__title">{{ title }}</h1>
+    {% comment %} <div class="nf__gradient"></div> {% endcomment %}
+    <h2 class="nf__subtitle">Summary</h2>
+
+    <p class="nf__summary">{{ excerpt }}</p>
+    <div class="nf__callout">test</div>
+    <dl class="nf__info">
+
+      <div>
+        <dt>Champions</dt>
+        {% for champions in champions %}
+          <dd>
+            <img src="/svg/{{ champions }}.svg" class="icon"> {{ champions }}
+          </dd>
+        {% endfor %}
+      </div>
+      
+      <div>
+        <dt>Shields</dt>
+        {% for shields in shields %}
+          <dd>
+            <img src="/svg/{{ shields }}.svg" class="icon"> {{ shields }}
+          </dd>
+        {% endfor %}
+      </div>
+      
+      {% if burn %}
+        <div>
+          <dt>Burn</dt>
+          <dd>
+            <img src="/svg/{{ burn }}.svg"> {{ burn }}
+            <span>+25% dmg dealt
+            <br>+50% dmg received</span>
+          </dd>
+        </div>
+      {% endif %}
+    </dl>
+    <img src="/img/{{ image }}" alt="" class="nf__image">
+  </section>
+
+  <section class="nf__content">
+
+    <h2>Walkthrough</h2>
+    {{ content }}
+  </section>
+</main>

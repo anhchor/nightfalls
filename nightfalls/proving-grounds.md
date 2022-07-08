@@ -13,13 +13,14 @@ shields:
   - Arc
   - Solar
   - Void
+burn: Solar
 image: ignovun_edit.jpg
 boss: Ignovun, Chosen of Caiatl
-excerpt: oh no
+excerpt: Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors.
 ---
 
 
-## Summary
+<!-- ## Summary
 
 oh no
 
@@ -44,10 +45,10 @@ oh no
 
 _Anecdotally_: it seems there were more Solar shields than any other.
 
----
+--- -->
 
 
-## Walkthrough
+<!-- ## Walkthrough -->
 
 ### Tank Entrance
 

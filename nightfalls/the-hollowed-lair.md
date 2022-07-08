@@ -18,7 +18,7 @@ boss: Fikrul, the Fanatic
 
 ---
 
-## Summary
+<!-- ## Summary
 
 Heavy on ad-clear efficiency. Clear spawns immediately, before progressing. Lower plates gradually, stop when enemies spawn to clear them, then continue lowering. Damage boss slowly, stop when enemies spawn, then continue.
 
@@ -40,10 +40,10 @@ Heavy on ad-clear efficiency. Clear spawns immediately, before progressing. Lowe
 - **Solar** (2): one in the room with the two plates; another spawns in a boss room wave.
 
 
----
+--- -->
 
 
-## Walkthrough
+<!-- ## Walkthrough -->
 
 The main goal is ad-clear. It's very easy to get overwhelmed in the boss room and wipe. Watch out for Void snipers, which can one-shot you. Mini Screebs will kill you.
 
