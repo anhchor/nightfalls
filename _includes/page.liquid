@@ -2,17 +2,24 @@
 layout: layout.liquid
 ---
 
+<nav class="site-nav">
+  <ul class="site-nav__list">
+    <li class="site-nav__item"><a href="/">nightfalls</a></li>
+    <li class="site-nav__item"><a href="/schedule">schedule</a></li>
+    <li class="site-nav__item"><a href="/about-nightfalls">about</a></li>
+    <li class="site-nav__item"><a href="/archive">archive</a></li>
+  </ul>
+</nav>
 <main class="container page">
 
-<header class="page-header">
-  <h1 class="page-title">{{ title }}</h1>
-</header>
 
-<section class="content">
-
-{{ content }}
-
-</section>
+<main class="nf">
+  <section class="nf__intro">
+    <h1 class="nf__title">{{ title }}</h1>
+  </section>
+  <section class="page-content text">
+    {{ content }}
+  </section>
 
 
 {% comment %} <footer class="page-footer">

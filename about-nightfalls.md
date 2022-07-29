@@ -8,6 +8,11 @@ Grandmaster Nightfalls are Nightfall strikes on the highest difficulty. They hav
 _Note: Season 17 info will be updated when available._
 
 
+## Access
+
+Your power level must be **1585** to access GMs. In Season 17, this means being at pinnacle cap (1570) with a +15 on your artifact, which is around season pass level ~110. You can make up for not being at the pinnacle cap with a higher artifact bonus.
+
+
 ## Modifiers
 
 All Grandmaster Nightfalls have the following modifiers:

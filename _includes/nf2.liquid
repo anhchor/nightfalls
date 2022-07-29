@@ -18,9 +18,7 @@ layout: layout.liquid
     <h2 class="nf__subtitle">Summary</h2>
 
     <p class="nf__summary">{{ excerpt }}</p>
-    <div class="nf__callout">test</div>
     <dl class="nf__info">
-
       <div>
         <dt>Champions</dt>
         {% for champions in champions %}
@@ -50,10 +48,17 @@ layout: layout.liquid
         </div>
       {% endif %}
     </dl>
+    <div class="callout">
+      <p class="callout__title">Current Nightfall (July 5–12)</p>
+      <ul>
+        <li>Drops <a href="https://www.light.gg/db/items/1387987271/silicon-neuroma-adept/">Silicon Neuroma</a> (stasis sniper rifle)</li>
+        <li>Double rewards</li>
+      </ul>
+    </div>
     <img src="/img/{{ image }}" alt="" class="nf__image">
   </section>
 
-  <section class="nf__content">
+  <section class="nf__content text">
 
     <h2>Walkthrough</h2>
     {{ content }}

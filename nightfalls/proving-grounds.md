@@ -16,39 +16,10 @@ shields:
 burn: Solar
 image: ignovun_edit.jpg
 boss: Ignovun, Chosen of Caiatl
-excerpt: Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors.
+excerpt: Tanks will one-shot you, but can't hit you if you're under the bridge. Hide in the oven in the boss room. Shoot down meteors. 
 ---
 
 
-<!-- ## Summary
-
-oh no
-
-
----
-
-
-
-## Nightfall Info
-
-### Champions:
-
-- Barrier
-- Unstoppable
-
-
-### Shields
-
-- **Arc** (few): mini-bosses in the Tank room may be Arc. Harpies in the beginning can be skipped.
-- **Solar** (few): mini-bosses.
-- **Void** (few): mini-bosses and Interceptors in the tank room.
-
-_Anecdotally_: it seems there were more Solar shields than any other.
-
---- -->
-
-
-<!-- ## Walkthrough -->
 
 ### Tank Entrance
 
@@ -64,6 +35,7 @@ _Anecdotally_: it seems there were more Solar shields than any other.
 - Watch out for one sniper on each upper platform on left and right.
 - Defeating all enemies will spawn the tanks.
 - Destroying one tank will spawn another wave of enemies.
+- Hiding under the bridge, hugging the side close to the tanks, keeps you safe from the tank blasts.
 
 
 ### Boss Room
@@ -73,11 +45,3 @@ _Anecdotally_: it seems there were more Solar shields than any other.
 - The tunnel is relatively safe. You can crouch on the ledge, in the middle of the tunnel, and not take damage. Enemies can go up to the sides and attack you. Fireballs can't hit you.
 - Anecdotally: when you're at spawn, Unstoppable Champions will often teleport and suddenly appear next to you instead of traversing the room towards you. Watch out for this.
 
-
----
-
-
-## Personal Loadout
-
-- Bottom-tree Solar Titan, Well Warlock, Invis Hunter
-- 2x Arbalest, 1x Telesto, 3x LFR
